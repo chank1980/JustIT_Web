@@ -1,0 +1,536 @@
+/** FICTIONAL CASE STUDY WEBSITE **/
+
+/** WEBSITE COLOUR THEME **/
+
+/*
+Main Colours:
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple
+*/
+
+/** Mobile default Styling (global default) **/
+
+/* Prevent adjustments of font size after orientation specifcally for IE and windows phone */
+html {
+  -webkit-text-size-adjust: 100;
+  -ms-text-size-adjust: 100;
+}
+
+/** embedded FONTs **/
+@font-face{
+    font-family:'28_Days';
+    src: url(/vendors/font/28_days_later-webfont.eot);
+    src: url(/vendors/font/28_days_later-webfont.svg) format('svg'),
+
+    url(/vendors/font/28_days_later-webfont.woff) format('woff'),
+    url(/vendors/font/28_days_later-webfont.woff2) format('woff2'),
+ url(/vendors/font/28_days_later.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/** apply a natural box model layout to all elements **/
+
+* {
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing : border-box;
+    box-sizing: border-box;
+}
+
+
+/** sets the images and videos to be 100% of their containers **/
+img, video {
+    width: 100%;
+}
+
+body {
+    font-family: serif, sans-serif;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HOME SECTION */
+
+.myVideo {
+    display: none;
+}
+
+.homeBgImage {
+    position: relative;
+    background-image: url(/resources/img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    height: 100vh; /* vh= view height */
+}
+
+.logoC {
+    position: absolute;
+    width: 45px;
+    top: 5px;
+    left: 5px;
+
+}
+
+.basketIcon {
+    color: rgb(200, 177, 250);
+    position: absolute;
+    top: 10px;
+    left: 40vw;
+    width: 45px;
+    z-index: 4;
+}
+
+.fa-shopping-basket {
+    font-size: 2em;
+}
+
+.headerC {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+/** Navigation section **/
+.navC {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 4, 18);
+}
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/** menu icon &#9776 **/
+#navBtn {
+    display: block;
+    width: 20%;
+    background-color: rgb(53, 38, 80);
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 5vw 0 75vw;
+    padding: 7px 5px;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    border-top: 3px;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+/* come back to add the additional classes to hide */
+.menu-items {
+    display: none;
+}
+
+.slogan {
+    font-family: '28_days';
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+  /*  position: absolute;
+    top: 100px;
+    left: 70%;
+    width: 10%; */
+    display: block;
+    text-align: right;
+   /* padding: 150px 5vw 0 0;*/
+    padding: 150px 9vw 0 50vw;
+
+
+
+    /*margin-left: 300px;*/
+}
+
+.mainHeading {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 50vh auto 0 auto;
+
+
+}
+
+.newArrivalB {
+
+    display: block;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    margin: 10px 25vw 0 auto;
+    border-radius: 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(200, 177, 250, 0.25);
+    cursor: pointer; /* change to thumb */
+    font-family: arial, sans-serif;
+
+}
+
+/**-------------- PRODUCTS SECTION -------------------**/
+
+h1 {
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+
+}
+
+.caption {
+    text-align: center;
+    padding: 0 10px;
+}
+
+figure {
+    margin: 0;
+
+}
+
+figcaption{
+    font-size: .9em;
+    /*padding: 0 25px;*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.allProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.allProducts article button {
+
+    display: block;
+    padding: 15px 20px;
+    border-radius: 5px 5px;
+    border : 1px solid (255, 255, 255);
+    background-color: rgb(53, 38, 80);
+    margin : 2vh auto 15vh auto;
+}
+
+.allProducts article button a {
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+}
+
+
+
+article{
+
+   /* text-align: center;*/
+    /*width: 230px;*/
+    margin: 1%;
+    text-align: center;
+    width: 230px;
+}
+
+
+.contact {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)),  url(/resources/img/trainerContactBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+   /* background-attachment: fixed;*/
+    width: 100%;
+    height: auto;
+    height: 100vh; /* vh= view height */
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    text-align: center;
+
+}
+
+.contact h1, h2 {
+
+    padding-top: 90px;
+}
+
+
+.contact p {
+    font-size: .9em;
+    padding-top: 30px;
+}
+
+.contact button {
+    display: block;
+    margin: auto;
+    background-color: rgb(53, 38, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.contact address {
+    line-height: 2;
+
+
+}
+
+/*.inputDtl #inputMsg{
+    padding: 10px;
+
+}*/
+
+#map {
+    width: 100%;
+    height: 450px;
+
+}
+
+/**=============  Mobile Style 568px ==============================**/
+@media screen and (min-width:568px){
+
+.slogan {
+    font-size: 2.5em;
+    padding: 50px 5vw 0 0;
+}
+.mainHeading {
+    margin: 40vh auto 0 auto;
+}
+
+
+.newArrivalB {
+    margin: 0 10vw 0 34vw;
+}
+
+/*.allProducts article button {
+    margin :10px 20vw 10px auto;
+}*/
+
+.figcaption {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 70px;
+}
+
+
+
+
+/**=============  Mobile Style 768px (Tablet) =====================**/
+ @media screen and (min-width:768px){
+
+.slogan {
+    font-size: 4em;
+    padding: 150px 50vw 0 60vw;
+
+}
+
+.mainHeading {
+
+    font-size: 4.0em;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 50vh auto 0 auto;
+}
+
+ .newArrivalB {
+
+    font-size: 2.5em;
+    padding: 15px 20px;
+    margin: 10px 26vw 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+.caption {
+    font-size: 1.6em;
+}
+
+.allProducts article button {
+    margin-bottom: 0;
+
+
+   /* padding: 20px 25px;
+    border-radius: 5px 5px;
+    border : 1px solid (255, 255, 255);
+    background-color: rgb(53, 38, 80);*/
+}
+/*.allProducts article button a {
+    font-size: 2.0em;
+}*/
+
+
+/*figcaption{
+    font-size: 1.8em;
+}*/
+
+.figcaption {
+    margin-bottom: 10px;
+    padding: 0;
+    height: 60px;
+}
+
+
+
+
+.contact h1, h2 {
+
+    font-size: 3em;
+}
+
+.contact p {
+    font-size: 1.5em;
+}
+
+
+.contact address {
+    font-size: 1.5em;
+}
+
+.fa-shopping-cart {
+    font-size: 2.5em;
+     }
+
+
+
+/**=============  Mobile Style 1024px (Desktop) =====================**/
+     @media screen and (min-width:1024px)  {
+
+         .myVideo {
+             display: inline-block;
+             background-size: cover;
+             position: absolute;
+             top: 0;
+             right: 0;
+             z-index: -1000;
+             width: 100%;
+             height: auto;
+         }
+
+         .homeBgImage{
+
+             background-image: none;
+             background: -webkit-linear-gradient(rgba(0, 0, 0,0.48), rgba(0, 0, 0, .53));
+             overflow: hidden;
+
+         }
+
+         #navBtn, .basketIcon {
+             display: none;
+
+         }
+
+         .menu-items {
+             display: inline;
+         }
+
+         .logoC {
+        /*    position: absolute;*/
+            width: 100px;
+            top: 80px;
+            left: 20px;
+         }
+
+         .slogan {
+            font-size:  3.5em;
+            margin-left: 10%;
+}
+        .mainHeading {
+            padding-top: 100px;
+            font-size: 3.5em;
+            letter-spacing: 4px;
+            text-align: left;
+            margin: 1vw 30px;
+}
+
+    .newArrivalB {
+
+            font-size: 2.0em;
+            padding: 10px 10px;
+            margin: 20px 30px;
+}
+
+
+
+         /*============= Navigation ===================*/
+        .navC {
+            text-align: right;
+            border-bottom: none;
+         }
+
+         nav li a {
+             border-top: none;
+             font-size: 0.7em;
+             letter-spacing: 1px;
+            /* padding-right: 40px;*/
+             padding: 20px;
+
+         }
+
+         nav a:hover {
+             color: rgb(200, 177, 250);
+         }
+
+         .menu-items a {
+             display: inline;
+             text-align: center;
+         }
+
+         .menu-items li {
+             border-top: none;
+             display: inline;
+         }
+
+         .allProducts {
+             column-count: 4;
+
+
+         }
+
+
+}
+
+
+
+
+
+/**   new setting for input fields **/
+
+     .inputfields {
+         backgroung-color: transparent;
+         /*border: none;*/
+         border-radius: 3px;
+         border: 1px solid rgba(255,255,255,0.2);
+         background: -webkit-linear-gradient(left, rgba(25,25,25,0.9), rgba(25,25,25,0.5));
+         width: 98%;
+         outline:none;
+         margin: 10px 0 20px 0;
+         height: 30px;
+         color: white;
+         font-size: 1.2em;
+         font-weight: lighter;
+         padding: 0 5%;
+
+     }
+
+     .inputMessage {
+         border-radius: 3px;
+         border: 1px solid rgba(255,255,255,0.2);
+         background:
+     }
